@@ -37,5 +37,9 @@ check_package:
 build_package:
 	Rscript -e "devtools::build('.')"
 
+gh_page:
+	Rscript -e "usethis::use_pkgdown()"
+	Rscript -e "pkgdown::build_site()"
+
 gh_release:
 	Rscript -e "usethis::use_github_release()"
