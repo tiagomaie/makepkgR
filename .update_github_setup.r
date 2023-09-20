@@ -24,6 +24,4 @@ usethis::use_github()
 
 # you may need to check if your main branch is called 'master' or 'main'
 usethis::use_github_pages(branch="master", path="/docs")
-usethis::use_pkgdown()
-
 
